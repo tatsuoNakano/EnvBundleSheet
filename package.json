@@ -9,6 +9,6 @@
     "gen:tsv": "node scripts/parseTSV.js tsv/env.tsv"
   },
   "keywords": ["env", "environment", "csv", "tsv"],
-  "author": "",
+  "author": "tatsuoNakano",
   "license": "MIT"
 }

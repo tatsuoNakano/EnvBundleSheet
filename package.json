@@ -1,0 +1,14 @@
+{
+  "name": "env-bundle-sheet",
+  "version": "1.0.0",
+  "description": "表計算ソフトで環境変数を管理して複数の.envファイルを自動生成するツール",
+  "main": "scripts/parseCSV.js",
+  "scripts": {
+    "gen": "node scripts/parseCSV.js csv/env.csv",
+    "gen:csv": "node scripts/parseCSV.js csv/env.csv",
+    "gen:tsv": "node scripts/parseTSV.js tsv/env.tsv"
+  },
+  "keywords": ["env", "environment", "csv", "tsv"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.development
+.env.test
+.env.production
+.env.testflight
+.DS_Store
+*.log
+.kiro/

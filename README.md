@@ -48,8 +48,8 @@ npm run gen:tsv
 
 | file | key | value | sample | explanation |
 |------|-----|-------|--------|-------------|
-| .env | EXPO_PUBLIC_APP_NAME | base-app-name [env] | base-app-name | 基本アプリ名 |
-| env.development | EXPO_PUBLIC_APP_NAME | dev-app-name [開発] | dev-app-name | 開発環境アプリ名 |
+| .env | EXPO_PUBLIC_APP_NAME | base-app-name  | base-app-name | 基本アプリ名 |
+| env.development | EXPO_PUBLIC_APP_NAME | dev-app-name | dev-app-name | 開発環境アプリ名 |
 
 **列の説明：**
 - `file`: 生成対象の `.env` ファイル名
@@ -73,28 +73,10 @@ npm run gen:tsv
 3. 基本環境にない環境固有の変数を追加
 4. `KEY=VALUE` 形式で `.env` ファイルを生成
 
-## 例
 
-**入力（CSV）:**
-```
-file,key,value
-.env,EXPO_PUBLIC_APP_NAME,base-app-name [env]
-.env,EXPO_PUBLIC_DEBUG_MODE,false [env]
-env.development,EXPO_PUBLIC_APP_NAME,dev-app-name [開発]
-env.development,EXPO_PUBLIC_DEBUG_MODE,true [開発]
-```
 
-**出力（.env）:**
-```
-EXPO_PUBLIC_APP_NAME=base-app-name [env]
-EXPO_PUBLIC_DEBUG_MODE=false [env]
-```
 
-**出力（env.development）:**
-```
-EXPO_PUBLIC_APP_NAME=dev-app-name [開発]
-EXPO_PUBLIC_DEBUG_MODE=true [開発]
-```
+
 
 ## 言語設定
 
@@ -104,5 +86,6 @@ EXPO_PUBLIC_DEBUG_MODE=true [開発]
 ## ライセンス
 
 MIT
+
 
 
